@@ -10,4 +10,8 @@ class Chitter < Sinatra::Base
     erb :index
   end
 
+  get '/user' do
+    erb :user
+  end
+
 end

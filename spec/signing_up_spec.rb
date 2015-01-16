@@ -1,9 +1,9 @@
 require './spec/spec_helper'
 require './app/server'
 
-context "User signs up" do
+feature "User signs up" do
 
-  it "should be able to sign up" do
+  scenario "should be able to sign up" do
     visit '/'
     expect(page).to have_content("Welcome to Chitter!")
     fill_in :email, :with => "test@test.com"
